@@ -7,7 +7,7 @@
 
 A comprehensive Security Operations Center (SOC) monitoring solution that analyzes security logs, maps them to NIST Cybersecurity Framework (CSF) functions, and provides real-time interactive dashboards with compliance reporting.
 
-## 👨‍💻 Author
+##  Author
 
 **Nelson Mbua Mosisah**  
 *CyberSecurity Analyst & Project Developer*  
@@ -17,33 +17,33 @@ A comprehensive Security Operations Center (SOC) monitoring solution that analyz
 
 > *This project was prepared and carried out by Nelson Mbua Mosisah as part of advanced SOC monitoring and compliance automation initiatives.*
 
-## 🚀 Features
+##  Features
 
-### 📊 Interactive Dashboard
+###  Interactive Dashboard
 - **Real-time Monitoring Charts**: Live event tracking, system metrics, and threat distribution
 - **NIST CSF Compliance Mapping**: Visual representation of security control coverage
 - **Severity Analysis**: Critical/High/Medium/Low event classification
 - **Gap Detection**: Identify missing Respond/Recover capabilities
 - **Priority Alerting**: Automated detection of high-risk security events
 
-### 🔍 Security Analysis
+###  Security Analysis
 - **Log Analysis**: Parse and analyze security logs from multiple sources
 - **Correlation Detection**: Identify related security events (e.g., brute-force → account lockouts)
 - **Noise Reduction**: Detect and flag noisy alert sources for tuning
 - **Compliance Reporting**: Generate NIST CSF compliance reports
 
-### 🔄 SIEM Integration
+###  SIEM Integration
 - **Multi-SIEM Support**: Splunk HEC, Elasticsearch, Generic Webhook
 - **Real-time Alerting**: Automated priority event notifications
 - **Report Indexing**: Store analysis results in your SIEM
 - **Flexible Configuration**: Easy setup for various SIEM environments
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.8 or higher
 - Required packages: `pandas`, `requests`
 
-## 🛠 Installation
+##  Installation
 
 1. **Clone the repository**:
    ```bash
@@ -61,7 +61,7 @@ Set up SIEM endpoints and credentials
 
 Configure log sources and alerting rules
 
-⚙️ Configuration
+Configuration
 Basic Setup
 Modify the CONFIG dictionary in the script:
 
@@ -98,7 +98,7 @@ python
     'USERNAME': 'your-username',
     'PASSWORD': 'your-password'
 }
-🎯 Usage
+Usage
 Basic Execution
 bash
 python soc_nist_csf_siem_integration.py
@@ -112,7 +112,7 @@ Docker Execution
 bash
 docker build -t soc-monitor .
 docker run -v /path/to/logs:/app/logs soc-monitor
-📈 Dashboard Features
+Dashboard Features
 Real-time Monitoring
 Events Per Minute: Live tracking of security event volume
 
@@ -136,7 +136,7 @@ Source Analysis: Log type and source distribution
 
 Timeline Analysis: Event patterns over time
 
-🔧 Customization
+Customization
 Adding New Log Sources
 Ensure your CSV has these columns:
 
@@ -157,7 +157,7 @@ python
 Extending SIEM Support
 Implement new SIEM clients by extending the SIEMClient base class.
 
-🗂 Project Structure
+Project Structure
 text
 soc-nist-csf-monitoring/
 ├── soc_nist_csf_siem_integration.py  # Main script
@@ -170,7 +170,7 @@ soc-nist-csf-monitoring/
 │   └── sample_logs.csv              # Example log format
 └── docs/                           # Documentation
     └── deployment-guide.md         # Deployment instructions
-🐳 Docker Support
+Docker Support
 Build the Image
 bash
 docker build -t soc-nist-monitor .
@@ -181,7 +181,7 @@ docker run -d \
   -v /host/config:/app/config \
   -p 8080:8080 \
   soc-nist-monitor
-📊 Sample Output
+Sample Output
 The script generates:
 
 Interactive HTML Dashboard (/tmp/soc_nist_csf_report.html)
@@ -192,7 +192,7 @@ Priority Alerts for critical security events
 
 Compliance Recommendations based on NIST CSF gaps
 
-🛡 NIST CSF Mapping
+NIST CSF Mapping
 The tool maps security events to these NIST CSF functions:
 
 Function	Description	Example Events
@@ -201,7 +201,7 @@ Protect	Access control, awareness training	Firewall blocks, phishing prevention
 Detect	Anomalies and events, continuous monitoring	IDS alerts, EDR detections
 Respond	Response planning, communications	Incident response, playbook execution
 Recover	Recovery planning, improvements	Backup restoration, system recovery
-🔍 Use Cases
+Use Cases
 Security Compliance
 NIST CSF compliance reporting
 
@@ -223,7 +223,7 @@ Response capability assessment
 
 Playbook execution tracking
 
-🏆 Project Highlights by Nelson Mbua Mosisah
+Project Highlights by Nelson Mbua Mosisah
 This project demonstrates several key cybersecurity competencies:
 
 Advanced Log Analysis: Developed sophisticated parsing and correlation algorithms
@@ -236,7 +236,7 @@ Compliance Automation: Automated NIST CSF mapping and gap analysis
 
 Scalable Architecture: Designed for enterprise-level deployment
 
-🤝 Contributing
+Contributing
 Fork the repository
 
 Create a feature branch (git checkout -b feature/amazing-feature)
@@ -247,10 +247,10 @@ Push to the branch (git push origin feature/amazing-feature)
 
 Open a Pull Request
 
-📝 License
+License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgments
+Acknowledgments
 Nelson Mbua Mosisah - Project development and implementation
 
 NIST Cybersecurity Framework
@@ -261,7 +261,7 @@ Chart.js for interactive visualizations
 
 Security community for best practices and inspiration
 
-📞 Support
+Support
 For issues and questions:
 
 Check the documentation
@@ -272,7 +272,7 @@ Contact the maintainer: Nelson Mbua Mosisah
 
 Note: This tool was developed by Nelson Mbua Mosisah for security monitoring and compliance assessment. Always test in non-production environments first and ensure proper authorization before monitoring production systems.
 
-📫 Contact Nelson Mbua Mosisah
+Contact Nelson Mbua Mosisah
 Email: nelson.mosisah@outlook.com
 
 LinkedIn: Nelson Mbua Mosisah
